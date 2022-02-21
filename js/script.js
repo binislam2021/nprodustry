@@ -2,12 +2,14 @@
 //     'use strict';
 
 //     // Slick Slider on the Banner
-//     $('.banner-slider').slick({
-//         arrows: false,
-//         dots: true,
-//         // autoplay: true,
-//         pauseOnHover: false,
-//     });
+    $('.banner-slider').slick({
+        // arrows: false,
+        // dots: true,
+        // autoplay: true,
+        // pauseOnHover: false,
+        prevArrow: '<i class="fa-solid fa-chevron-left left"></i>',
+        nextArrow: '<i class="fa-solid fa-chevron-right right"></i>'
+    });
 
 //     // VenoBox on the About
 //     new VenoBox({
