@@ -23,6 +23,7 @@ img{
     --white: #fff;
     --brand: #ffca36;
     --colr-35: #353535;
+    --colr-d: #dddddd;
     --over-60: rgba(0, 0, 0, 0.6);
     --over-70: rgba(0, 0, 0, 0.7);
     --over-80: rgba(0, 0, 0, 0.8);
@@ -86,7 +87,7 @@ img{
     color: #555555;
 }
 .text-d{
-    color: #dddddd;
+    color: var(--colr-d);
 }
 .bg-brand{
     background: var(--brand);
@@ -136,7 +137,7 @@ header li::before {
     content: '';
     width: 1px;
     height: 0;
-    background: var(--bg-35);
+    background: var(--colr-35);
     position: absolute;
     top: 5px;
     left: 20px;
@@ -153,7 +154,7 @@ header li::after {
     content: '';
     width: 1px;
     height: 0;
-    background: var(--bg-35);
+    background: var(--colr-35);
     position: absolute;
     bottom: 4px;
     right: 4px;
@@ -177,7 +178,7 @@ header li a::before {
     content: '';
     width: 0;
     height: 1px;
-    background: var(--bg-35);
+    background: var(--colr-35);
     position: absolute;
     top: 9px;
     left: 16px;
@@ -194,7 +195,7 @@ header li a::after {
     content: '';
     width: 0;
     height: 1px;
-    background: var(--bg-35);
+    background: var(--colr-35);
     position: absolute;
     bottom: 8px;
     right: 0;
@@ -549,11 +550,28 @@ nav .nav-link:hover::after{
 /* ===============================================
         Service Ends
 ================================================= */
-
-
 /* ===============================================
         About Starts
 ================================================= */
+#about .nav-link{
+    border: none;
+    border-bottom: 5px solid var(--colr-d);
+    padding: 8px 44px 16px 44px;
+}
+#about .nav-link.active{
+    background: none;
+    border-bottom: 5px solid var(--brand);
+}
+#about p{
+    padding-right: 65px;
+}
+#about .btn{
+    border: 2px solid var(--brand);
+}
+#about .btn:hover{
+    background: var(--brand);
+    color: var(--colr-35);
+}
 /* ===============================================
         About Ends
 ================================================= */
